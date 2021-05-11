@@ -12,6 +12,7 @@ import { PhotoResistor } from './inputs/PhotoResistor';
 import { TMP36 } from './inputs/TemperatureSensors';
 import { Potentiometer } from './inputs/Potentiometer';
 import { Relay } from './inputs/Relay';
+import { DHT11 } from './inputs/DHT11';
 import { MQ2 } from './inputs/GasSensor';
 import { Resistor, BreadBoard } from './General';
 
@@ -44,7 +45,7 @@ export class Utils {
       ['L298N']
     ],
     misc: [
-      ['Label', 'RelayModule']
+      ['Label', 'RelayModule','DHT11']
     ],
     general: [
       ['Resistor', 'BreadBoard']
@@ -167,6 +168,11 @@ export class Utils {
       name: 'Buzzer',
       image: './assets/images/components/Buzzer.png',
       className: Buzzer
-    }
+    },
+    DHT11: {
+      name: 'DHT11',
+      image: './assets/images/components/dht11.svg',
+      className: DHT11
+    },
   };
 }
