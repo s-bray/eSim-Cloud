@@ -1,0 +1,117 @@
+{
+    "name": "L293D Motor Driver IC",
+    "className": "L293D",
+    "pins": [
+        {
+            "x": 0,
+            "y": 64,
+            "name": "Enable 1,2"
+        },
+        {
+            "x": 8,
+            "y": 64,
+            "name": "Input1"
+        },
+        {
+            "x": 16,
+            "y": 64,
+            "name": "Output1"
+        }
+{
+            "x": 24,
+            "y": 64,
+            "name": "GND"
+        },
+{
+            "x": 32,
+            "y": 64,
+            "name": "GND"
+        },
+{
+            "x": 40,
+            "y": 64,
+            "name": "Output2"
+        },
+{
+            "x": 48,
+            "y": 64,
+            "name": "Input2"
+        },
+{
+            "x": 56,
+            "y": 64,
+            "name": "Vcc2"
+        },
+{
+            "x": 0,
+            "y": 128,
+            "name": "Vcc1"
+        },
+{
+            "x": 8,
+            "y": 128,
+            "name": "Input4"
+        },
+{
+            "x": 16,
+            "y": 128,
+            "name": "Output4"
+        },
+{
+            "x": 24,
+            "y": 128,
+            "name": "GND"
+        },
+{
+            "x": 32,
+            "y": 128,
+            "name": "GND"
+        },
+{
+            "x": 40,
+            "y": 128,
+            "name": "Output3"
+        },
+{
+            "x": 48,
+            "y": 128,
+            "name": "Input3"
+        },
+{
+            "x": 56,
+            "y": 128,
+            "name": "Enable 3,4"
+        },
+
+    ],
+    "pointHalf": 4,
+    "draw": [
+        {
+            "type": "image",
+            "url": "assets/images/components/L293D.svg",
+            "width": 73,
+            "height": 73,
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "simulation": {},
+    "info": {
+        "name": "L293D Motor Driver IC",
+        "image": "https://www.prayogindia.in/wp-content/uploads/2018/07/l293d-ic-prayogindia.jpg",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/l293.pdf",
+        "description": "The L293D is a popular 16-Pin Motor Driver IC. As the name suggests it is mainly used to drive motors. A single L293D IC is capable of running two DC motors at the same time; also the direction of these two motors can be controlled independently. So if you have motors which has operating voltage less than 36V and operating current less than 600mA, which are to be controlled by digital circuits like Op-Amp, 555 timers, digital gates or even Micron rollers like Arduino, PIC, ARM etc.. this IC will be the right choice for you.",
+        "properties": {
+            "Supply Voltage": "3.5V to 5.5V",
+            "Ramp-Up Rate": "3°C/sec",
+            "Ramp-Down Rate ": "−6°C/sec",
+            "Operating Temperature Range": " 0°C to 50°C ",
+            "Storage Temperature Range": "−65°C to +160°C",
+            "Offset Voltage": "0.5V",
+            "Output voltage ": "750mV/25°C",
+            "Accuracy": "±1°C ",
+            "Supply Current": "less than 60uA",
+            "Shutdown current": "0.6 µA max"
+        }
+    }
+}
