@@ -13,6 +13,7 @@ import { TMP36 } from './inputs/TemperatureSensors';
 import { Potentiometer } from './inputs/Potentiometer';
 import { Relay } from './inputs/Relay';
 import { DHT11 } from './inputs/DHT11';
+import { L293D } from './inputs/L293D';
 import { MQ2 } from './inputs/GasSensor';
 import { Resistor, BreadBoard } from './General';
 
@@ -45,7 +46,7 @@ export class Utils {
       ['L298N']
     ],
     misc: [
-      ['Label', 'RelayModule','DHT11']
+      ['Label', 'RelayModule','DHT11','L293D']
     ],
     general: [
       ['Resistor', 'BreadBoard']
@@ -173,6 +174,11 @@ export class Utils {
       name: 'DHT11',
       image: './assets/images/components/dht11.svg',
       className: DHT11
+    },
+    L293D: {
+      name: 'L293D',
+      image: './assets/images/components/L293D.svg',
+      className: L293D
     },
   };
 }
