@@ -1,96 +1,80 @@
 {
     "name": "L293D Motor Driver IC",
     "className": "L293D",
-    "pins": [
-        {
-            "x": 0,
-            "y": 64,
-            "name": "Enable 1,2"
-        },
-        {
-            "x": 8,
-            "y": 64,
-            "name": "Input1"
-        },
-        {
-            "x": 16,
-            "y": 64,
-            "name": "Output1"
-        }
-{
-            "x": 24,
-            "y": 64,
-            "name": "GND"
-        },
-{
-            "x": 32,
-            "y": 64,
-            "name": "GND"
-        },
-{
-            "x": 40,
-            "y": 64,
-            "name": "Output2"
-        },
-{
-            "x": 48,
-            "y": 64,
-            "name": "Input2"
-        },
-{
-            "x": 56,
-            "y": 64,
-            "name": "Vcc2"
-        },
-{
-            "x": 0,
-            "y": 128,
-            "name": "Vcc1"
-        },
-{
-            "x": 8,
-            "y": 128,
-            "name": "Input4"
-        },
-{
-            "x": 16,
-            "y": 128,
-            "name": "Output4"
-        },
-{
-            "x": 24,
-            "y": 128,
-            "name": "GND"
-        },
-{
-            "x": 32,
-            "y": 128,
-            "name": "GND"
-        },
-{
-            "x": 40,
-            "y": 128,
-            "name": "Output3"
-        },
-{
-            "x": 48,
-            "y": 128,
-            "name": "Input3"
-        },
-{
-            "x": 56,
-            "y": 128,
-            "name": "Enable 3,4"
-        },
-
-    ],
+  "pins": [
+    {
+      "x": 118,
+      "y": 9,
+      "name": "EN2"
+    },
+    {
+      "x": 118,
+      "y": 19,
+      "name": "IN4"
+    },
+    {
+      "x": 118,
+      "y": 29,
+      "name": "IN3"
+    },
+    {
+      "x": 118,
+      "y": 39,
+      "name": "IN2"
+    },
+    {
+      "x": 118,
+      "y": 49,
+      "name": "IN1"
+    },
+    {
+      "x": 118,
+      "y": 59,
+      "name": "EN1"
+    },
+    {
+      "x": 69,
+      "y": 3,
+      "name": "OUT1"
+    },
+    {
+      "x": 82,
+      "y": 3,
+      "name": "OUT2"
+    },
+    {
+      "x": 72,
+      "y": 117,
+      "name": "OUT3"
+    },
+    {
+      "x": 84,
+      "y": 117,
+      "name": "OUT4"
+    },
+    {
+      "x": 115,
+      "y": 77,
+      "name": "VSS"
+    },
+    {
+      "x": 115,
+      "y": 97,
+      "name": "VS"
+    },
+    {
+      "x": 115,
+      "y": 87,
+      "name": "GND"
+    }
+  ],
     "pointHalf": 4,
     "draw": [
         {
             "type": "image",
             "url": "assets/images/components/L293D.svg",
-            "width": 73,
-            "height": 73,
+            "width": 100,
+            "height": 100,
             "x": 0,
             "y": 0
         }
