@@ -6,6 +6,7 @@ import { LED, RGBLED } from './outputs/Led';
 import { UltrasonicSensor } from './inputs/UltrasonicSensor';
 import { PIRSensor } from './inputs/PIRSensor';
 import { Motor, L298N, ServoMotor } from './outputs/Motors';
+import { Motor2, L293D, ServoMotor2 } from './outputs/Motors2';
 import { LCD16X2, SevenSegment } from './outputs/Display';
 import { Label } from './Miscellaneous';
 import { PhotoResistor } from './inputs/PhotoResistor';
@@ -13,7 +14,6 @@ import { TMP36 } from './inputs/TemperatureSensors';
 import { Potentiometer } from './inputs/Potentiometer';
 import { Relay } from './inputs/Relay';
 import { DHT11 } from './inputs/DHT11';
-import { L293D } from './inputs/L293D';
 import { MQ2 } from './inputs/GasSensor';
 import { Resistor, BreadBoard } from './General';
 
@@ -43,10 +43,10 @@ export class Utils {
       ['LCD16X2']
     ],
     drivers: [
-      ['L298N']
+      ['L298N','L293D']
     ],
     misc: [
-      ['Label', 'RelayModule','DHT11','L293D']
+      ['Label', 'RelayModule','DHT11']
     ],
     general: [
       ['Resistor', 'BreadBoard']
@@ -176,7 +176,7 @@ export class Utils {
       className: DHT11
     },
     L293D: {
-      name: 'L293D',
+      name: 'Motor Driver L293D',
       image: './assets/images/components/L293D.svg',
       className: L293D
     },
