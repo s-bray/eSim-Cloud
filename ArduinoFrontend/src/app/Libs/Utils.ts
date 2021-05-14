@@ -177,7 +177,7 @@ export class Utils {
     },
     L293D: {
       name: 'Motor Driver L293D',
-      image: './assets/images/components/L293D.svg',
+      image: './assets/images/components/L293D.jpg',
       className: L293D
     },
   };
