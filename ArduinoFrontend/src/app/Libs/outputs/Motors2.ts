@@ -197,12 +197,22 @@ export class L293D extends CircuitElement {
       this.pinNamedMap[node.label] = node;
     }
     this.pinNamedMap['VS'].addValueListener(v => {
-      this.pinNamedMap['GND'].setValue(v, this.pinNamedMap['GND']);
+      this.pinNamedMap['GND1'].setValue(v, this.pinNamedMap['GND1']);
       if (v >= 5) {
-        this.pinNamedMap['VSS'].setValue(5, this.pinNamedMap['VSS']);
+        this.pinNamedMap['GND2'].setValue(5, this.pinNamedMap['GND2']);
       }
       this.update();
     });
+
+
+    this.pinNamedMap['VSS'].addValueListener(v => {
+      this.pinNamedMap['GND3'].setValue(v, this.pinNamedMap['GND3']);
+      if (v >= 5) {
+        this.pinNamedMap['GND4'].setValue(5, this.pinNamedMap['GND4']);
+      }
+      this.update();
+    });
+
 
     this.pinNamedMap['IN1'].addValueListener(v => {
       if (v !== this.prevValues.IN1) {
