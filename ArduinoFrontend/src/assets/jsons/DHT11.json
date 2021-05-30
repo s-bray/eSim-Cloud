@@ -1,0 +1,51 @@
+{
+    "name": "Temperature and Humidity Sensor DHT11",
+    "className": "DHT11",
+    "pins": [
+        {
+            "x": -1,
+            "y": 64,
+            "name": "Power"
+        },
+        {
+            "x": 32,
+            "y": 64,
+            "name": "Vout"
+        },
+        {
+            "x": 60,
+            "y": 64,
+            "name": "GND"
+        }
+    ],
+    "pointHalf": 4,
+    "draw": [
+        {
+            "type": "image",
+            "url": "assets/images/components/dht11.svg",
+            "width": 73,
+            "height": 73,
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "simulation": {},
+    "info": {
+        "name": "Temperature and Humidity Sensor DHT11",
+        "image": "https://cdn.evilmadscientist.com/catalog/kits/ada-dht11/imgmed/1@2x.jpg",
+        "Datasheet": "https://components101.com/asset/sites/default/files/component_datasheet/DHT11-Temperature-Sensor.pdf",
+        "description": "The DHT11 is a commonly used Temperature and humidity sensor. The sensor comes with a dedicated NTC to measure temperature and an 8-bit microcontroller to output the values of temperature and humidity as serial data. The sensor is also factory calibrated and hence easy to interface with other microcontrollers.",
+        "properties": {
+            "Supply Voltage": "3.5V to 5.5V",
+            "Ramp-Up Rate": "3°C/sec",
+            "Ramp-Down Rate ": "−6°C/sec",
+            "Operating Temperature Range": " 0°C to 50°C ",
+            "Storage Temperature Range": "−65°C to +160°C",
+            "Offset Voltage": "0.5V",
+            "Output voltage ": "750mV/25°C",
+            "Accuracy": "±1°C ",
+            "Supply Current": "less than 60uA",
+            "Shutdown current": "0.6 µA max"
+        }
+    }
+}

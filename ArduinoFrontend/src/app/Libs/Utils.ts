@@ -6,12 +6,14 @@ import { LED, RGBLED } from './outputs/Led';
 import { UltrasonicSensor } from './inputs/UltrasonicSensor';
 import { PIRSensor } from './inputs/PIRSensor';
 import { Motor, L298N, ServoMotor } from './outputs/Motors';
+import { Motor2, L293D, ServoMotor2 } from './outputs/Motors2';
 import { LCD16X2, SevenSegment } from './outputs/Display';
 import { Label } from './Miscellaneous';
 import { PhotoResistor } from './inputs/PhotoResistor';
 import { TMP36 } from './inputs/TemperatureSensors';
 import { Potentiometer } from './inputs/Potentiometer';
 import { Relay } from './inputs/Relay';
+import { DHT11 } from './inputs/DHT11';
 import { MQ2 } from './inputs/GasSensor';
 import { Resistor, BreadBoard } from './General';
 
@@ -41,10 +43,10 @@ export class Utils {
       ['LCD16X2']
     ],
     drivers: [
-      ['L298N']
+      ['L298N','L293D']
     ],
     misc: [
-      ['Label', 'RelayModule']
+      ['Label', 'RelayModule','DHT11']
     ],
     general: [
       ['Resistor', 'BreadBoard']
@@ -167,6 +169,16 @@ export class Utils {
       name: 'Buzzer',
       image: './assets/images/components/Buzzer.png',
       className: Buzzer
-    }
+    },
+    DHT11: {
+      name: 'DHT11',
+      image: './assets/images/components/dht11.svg',
+      className: DHT11
+    },
+    L293D: {
+      name: 'Motor Driver L293D',
+      image: './assets/images/components/L293D.jpg',
+      className: L293D
+    },
   };
 }
