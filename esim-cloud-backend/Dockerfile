@@ -56,6 +56,7 @@ RUN arduino-cli core update-index \
     && arduino-cli lib install Servo \
     && arduino-cli lib install Stepper \
     && arduino-cli lib install LiquidCrystal \
+    && arduino-cli lib install SimpleDHT \
     && cd /root/.arduino15/ \
     && find / -name platform.txt -exec sed -i "s/^compiler.path=.*$/compiler.path=/g" {} \; \
     && find . -name ctags -exec ln -nsf /usr/bin/ctags {} \;
