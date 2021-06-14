@@ -254,7 +254,7 @@ export class ArduinoUno extends CircuitElement {
 
     document.getElementById('msg').append(myOutput);
     this.pinNameMap['5V'].setValue(5, null);
-    this.pinNameMap['IOREF'].setValue(5, null);
+    
     this.pinNameMap['3.3V'].setValue(3.3, null);
 
     if (this.servos.length > 0) {

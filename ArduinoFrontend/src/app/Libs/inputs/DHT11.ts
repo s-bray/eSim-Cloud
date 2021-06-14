@@ -50,7 +50,7 @@ export class DHT11 extends CircuitElement {
    * Initialize Variable and callback when start simulation is pressed
    */
   initSimulation(): void {
-    this.valueText = this.canvas.text(this.x + this.tx + 120, this.y + this.ty - 40, '42.38°C');
+    this.valueText = this.canvas.text(this.x + this.tx + 120, this.y + this.ty - 40, '');
     this.valueText.attr({
       'font-size': 15
     });
@@ -66,6 +66,26 @@ export class DHT11 extends CircuitElement {
       this.setValue((tmp + 50) / 100);
     });
     this.setValue(0.925);
+
+
+    this.valueText = this.canvas.text(this.x + this.tx + 220, this.y + this.ty - 50, '55 RH');
+    this.valueText.attr({
+      'font-size': 15
+    });
+    this.slide = new Slider(this.canvas, this.x + this.tx, this.y + this.ty - 100);
+    this.slide.setGradient('#03b5fc', '#fc6203');
+    this.slide.setValueChangeListener((v1) => {
+      const hum = v1 * 165 + -40; // Temperature
+      // this.nodes[1].setValue((tmp + 50) / 100, null);
+      // console.log([tmp, (tmp + 50) / 100]);
+      this.valueText.attr({
+        text: `${Math.round((hum) * 100) / 100} RH`
+      });
+      this.setValue((hum + 50) / 100);
+    });
+    this.setValue(0.9);
+
+
   }
 
   /** remove slider and text */

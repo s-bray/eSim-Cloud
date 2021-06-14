@@ -41,18 +41,24 @@ export class Motor extends CircuitElement {
   // 6v -> 9000rpm ->
   /** init is called when the component is complety drawn to the canvas */
   init() {
+    console.log("Motor Data : " + this.rpm);
     // Add value change Listener to circuit node
     this.nodes[0].addValueListener((v, cby, par) => {
       if (cby === this.nodes[1]) {
         return;
       }
+      
       // sets the value for node
+
       this.nodes[1].setValue(v, this.nodes[0]);
+      
       this.dirn = -1;
       if (v < 0) {
         this.elements[1].stop();
+        
       } else {
         if (this.rpm) {
+          console.log("Motor Data : " + this.rpm);
           this.rpm.remove();
           this.rpm = null;
         }

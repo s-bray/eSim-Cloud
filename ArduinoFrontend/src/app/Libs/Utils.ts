@@ -6,7 +6,7 @@ import { LED, RGBLED } from './outputs/Led';
 import { UltrasonicSensor } from './inputs/UltrasonicSensor';
 import { PIRSensor } from './inputs/PIRSensor';
 import { Motor, L298N, ServoMotor } from './outputs/Motors';
-import { Motor2, L293D, ServoMotor2 } from './outputs/Motors2';
+import {L293D } from './outputs/Motors2';
 import { LCD16X2, SevenSegment } from './outputs/Display';
 import { Label } from './Miscellaneous';
 import { PhotoResistor } from './inputs/PhotoResistor';

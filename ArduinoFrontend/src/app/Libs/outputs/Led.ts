@@ -54,7 +54,7 @@ export class LED extends CircuitElement {
   init() {
     if (LED.glowColors.length === 0) {
       // LED
-      // console.log(this.data);
+      console.log('This is LED data :' + this.data.glowcolors);
       LED.colors = this.data.colors;
       LED.colorNames = this.data.colorNames;
       LED.glowColors = this.data.glowcolors;
